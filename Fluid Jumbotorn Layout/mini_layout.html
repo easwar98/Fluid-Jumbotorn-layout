@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>layout</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+</head>
+<body>
+
+     <nav class="navbar navbar-dark navbar-expand-md bg-dark">
+        <div class="container">
+        <a class="navbar-brand" href="#">Logo</a>	
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#nav"><span class="navbar-toggler-icon"></span>
+            </button>
+              
+          	<div class="collapse navbar-collapse" id="nav">
+          		<ul class=" nav navbar-nav">
+          			<li class="nav-item">
+          				<a class="nav-link" href="#grid">Grid</a>
+          			</li>
+          			<li class="nav-item">
+          			   <a class="nav-link" href="#cards">Cards</a>
+          			</li>
+          			<li class="nav-item">
+          			   <a class="nav-link" href="#tags">Tags</a>
+          			</li>
+          			<li class="nav-item">
+          			   <a class="nav-link" href="#forms">Forms</a>
+          			</li>
+          			<li class="nav-item">
+          			   <a class="nav-link" href="#buttons">Buttons</a>
+          			</li>
+          			<li class="nav-item">
+          			   <a class="nav-link" href="#bar">Progress Bars</a>
+          			</li>
+          			<li class="nav-item">
+          			   <a class="nav-link" href="#rtable">Tables</a>
+          			</li>
+          		</ul>
+          	</div>
+        </div>    
+     </nav>
+
+<div class="jumbotron jumbotron-fluid bg-info">
+	<div class="container">
+		<h1 class="display-3">Fluid Jumbotron</h1>
+		<p>This is a fluid jumbotron. Fluid jumbotrons occupy the entire horizontal space of its parent.</p>
+        <p>Fluid jumbotrons are new in Bootstrap 4.</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Jumbotron Examples &raquo;</a></p>
+    </div>
+</div>
+ <!---------Grid------------------>
+<div class="container">
+	<section id="grid">
+		<h2>Bigger Grid</h2>
+	    <p>OK, maybe not <em>bigger</em> but... Bootstrap 4 uses a 5 tier grid system compared to the 4 tier grid system in Bootstrap 3.</p>
+	    <p>Bootstrap 4 added <code>sm</code> to its grid classes, so it now supports <code>xs</code>, <code>sm</code>, <code>md</code>, <code>lg</code>, and <code>xl</code> (for example, <code>class="col-sm-6</code>).</p>
+
+<div class="grid-example">
+	<div class="row">
+	<div class="col-md-12">
+	<div class="row bg-info">
+		<div class="col-md-1">.col-sm-1</div>
+		<div class="col-md-1">.col-sm-1</div>
+		<div class="col-md-1">.col-sm-1</div>
+		<div class="col-md-1">.col-sm-1</div>
+		<div class="col-md-1">.col-sm-1</div>
+		<div class="col-md-1">.col-sm-1</div>
+		<div class="col-md-1">.col-sm-1</div>
+		<div class="col-md-1">.col-sm-1</div>
+		<div class="col-md-1">.col-sm-1</div>
+		<div class="col-md-1">.col-sm-1</div>
+		<div class="col-md-1">.col-sm-1</div>
+		<div class="col-md-1">.col-sm-1</div>
+	</div>
+  </div>
+  </div>
+    <div class="row bg-info mt-1">
+                  <div class="col-md-2">.col-sm-2</div>
+                  <div class="col-md-3">.col-sm-3</div>
+                  <div class="col-md-7">.col-sm-7</div>
+    </div>
+    <div class="row bg-info mt-1">
+                  <div class="col-md-4">.col-sm-4</div>
+                  <div class="col-md-4">.col-sm-4</div>
+                  <div class="col-md-4">.col-sm-4</div>
+    </div>
+    <div class="row bg-info mt-1">
+                  <div class="col-md-5">.col-sm-5</div>
+                  <div class="col-md-7">.col-sm-7</div>
+    </div>
+    <div class="row bg-info mt-1">
+                  <div class="col-md-6">.col-sm-6</div>
+                  <div class="col-md-6">.col-sm-6</div>
+    </div>
+    <div class="row bg-info mt-1">
+                  <div class="col-md-12">.col-sm-12</div>
+    </div>
+  </div>
+
+
+  <div class="card">
+                    <div class="card-header">Card 4</div>
+                        <div class="card-block">
+                            <p class="card-text">Text for this card.</p>
+                        </div>
+                    <div class="card-footer">Footer</div>
+                </div>
+                <!-- Card 5 -->
+                <div class="card">
+                    <div class="card-block">
+                        <h4 class="card-title">Card 5</h4>
+                        <p class="card-text">Text for this card.</p>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="card">
+                    <div class="card-header">Card 6</div>
+                    <div class="card-block">
+                        <p class="card-text">Text for this card. Here's <a href="#" class="card-link">why</a>.</p>
+                    </div>
+                </div>
+                <!-- Card 7 -->
+                <div class="card">
+                    <div class="card-header">Card 7</div>
+                    <div class="card-block">
+                        <p class="card-text">Text for this card. Here's <a href="#" class="card-link">why</a>.</p>
+                    </div>
+                    <div class="card-footer">Footer</div>
+                </div>
+                <!-- Card 8 -->
+                <div class="card">
+                    <div class="card-block">
+                        <h4 class="card-title">Card 8</h4>
+                        <p class="card-text">Text for this card.</p>
+                    </div>
+                </div>
+            </div>
+<p>The following table shows how different grid options work with different viewport sizes.</p>
+
+      <table class="table table-border table-striped"> 
+	     <thead>
+                  <tr>
+                    <th>&nbsp;</th>
+                    <th>
+                      Extra small
+                      <small>&lt;34em</small>
+                    </th>
+                    <th>
+                      Small
+                      <small>&ge;34em</small>
+                    </th>
+                    <th>
+                      Medium
+                      <small>&ge;48em</small>
+                    </th>
+                    <th>
+                      Large
+                      <small>&ge;62em</small>
+                    </th>
+                    <th>
+                      Extra large
+                      <small>&ge;75em</small>
+                    </th>
+                  </tr>
+                </thead>
+        <tbody>
+        	<tr>
+        		<th class="text-nowrap" scope="row">Grid behavior</th>
+        			<td>Horizontal at all time.</td>
+        			<td colspan="4">Collapsed to start, horizontal above breakpoints.</td>
+        	</tr>
+        	<tr>
+                    <th class="text-nowrap" scope="row">Container width</th>
+                    <td>None (auto)</td>
+                    <td>34rem</td>
+                    <td>45rem</td>
+                    <td>60rem</td>
+                    <td>72.25rem</td>
+            </tr>
+
+            <tr>
+                    <th class="text-nowrap" scope="row">Class prefix</th>
+                    <td><code>.col-xs-</code></td>
+                    <td><code>.col-sm-</code></td>
+                    <td><code>.col-md-</code></td>
+                    <td><code>.col-lg-</code></td>
+                    <td><code>.col-xl-</code></td>
+            </tr>
+            <tr>
+                    <th class="text-nowrap" scope="row">Number of columns</th>
+                    <td colspan="5">12</td>
+            </tr>
+            <tr>
+                    <th class="text-nowrap" scope="row">Gutter width</th>
+                    <td colspan="5">30px (15px on each side of a column)</td>
+            </tr>
+            <tr>
+                    <th class="text-nowrap" scope="row">Nestable</th>
+                    <td colspan="5">Yes</td>
+            </tr>
+            <tr>
+                    <th>Offsets</th>
+                    <td colspan="5">Yes</td>
+            </tr>
+            <tr>
+                    <th>Column ordering</th>
+                    <td colspan="5">Yes</td>
+            </tr>
+        </tbody>
+      </table>
+    </section>
+</div>
+<!----------------------card--------------------->
+<div class="container">   
+  <section id=cards>
+	    <h2>Introducing Cards</h2>
+	    <p> In bootstrap 4,<a href="#">cards</a> replace panels,thumbnails and well from Bootstrap 3</p>
+  <div class="row">
+  <div class="col-md-12">
+  <div class="row">
+
+      <!---------card-1---------->
+        <div class="col-md-4">
+	        <div class="card">
+		      <div class="card-header">Card 1</div>
+			       <div class="card-block">
+				   <p class="card-text">Text for this card.</p>
+			    </div>
+		        </div>
+	      </div>
+        
+	<!----card-2------>
+		<div class="col-md-4">
+			<div class="card">
+				<div class="card-block">
+		            <h4 class="card-title">Card 2</h4>
+					<p class="card-text">Text for this card.</p>
+				</div>
+			</div>
+</div>
+	<!-----card-3------>
+    		<div class="col-md-4">
+    			<div class="card">
+    			       <div class="card-header">Card 3</div>
+    		      <div class="card-block">
+    						<p class="card-text">Text for this card.</p>
+    					</div>
+    					  <div class="card-footer">Footer</div>
+    			</div>
+    		</div>
+</section>
+</div>
+<hr>
+<!---------------Tags------------------>
+<div class="container">
+  <section id="tags">
+    <h2>Introducing<span class="badge badge-secondary">Tags</span></h2>
+    <p>Bootstrap's tag classes can be used to highlight additional information that's appended to a string of text</p>
+    <p><a href="#">Tags</a>replace lables from Bootstrap 3.</p>
+    <h3>Contextual Tags</h3>
+    <p>Add some color based on context.</p>
+    <p>
+      <span class="badge badge-secondary">Default</span>
+      <span class="badge badge-primary">Primary</span>
+      <span class="badge badge-success">Success</span>
+      <span class="badge badge-info">info</span>
+      <span class="badge badge-warning">Warning</span>
+      <span class="badge badge-danger">danger</span>
+    </p>
+    <h3>Pill Tags</h3>
+    <p>use the <code>.tag-pill</code>class to give your tags rounded corners.</p>
+    <p>
+      <span class="badge badge-pill badge-secondary">Default</span>
+      <span class="badge badge-pill badge-primary">Primary</span>
+      <span class="badge badge-pill badge-success">success</span>
+      <span class="badge badge-pill badge-info">info</span>
+      <span class="badge badge-pill badge-warning">warning</span>
+      <span class="badge badge-pill badge-danger">danger</span>
+    </p>
+  </section>
+</div>
+<hr>
+<!----------custom Forms------------->
+<div class="container">
+  <section id="forms">
+    <h2>Introducing custom Forms</h2>
+    <p>Bootstrap 4 introduces<a href="#">custom forms</a>. These are custom form elements that completely replace the browser defaults. The idea behind custom forms is that they allow for more customization and cross browser consistency.</p>
+       
+       <!-------checkbox------------->
+<p>
+  <div class="form-check">
+    <label class="form-check-label">
+      <input type="checkbox" class="form-check-input">Boots
+    </label>
+
+    <label class="form-check-label ml-5">
+      <input type="checkbox" class="form-check-input">Shoes
+    </label>
+  </div>
+</p>
+
+<!---------------radio----------->
+  <div class="form-check">
+    <label class="form-check-label">
+      <input type="radio" name="radio" class="form-check-input">Shoes
+  </div>
+  <div class="form-check">
+    <label class="form-check-label">
+    <input type="radio" name="radio" class="form-check-input">Boots
+  </div>
+
+<!---------select----------->
+<div class="form-group">
+  <select class="form-control">
+    <option>Select anyone...</option>
+    <option>Boots</option>
+    <option>Shoes</option>
+    <option>Feet</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <input type="file" name="file" multiple class="form-control-file">
+</div>
+  </section>
+</div>
+<hr>
+<!------------outline Buttons --------->
+<div class="container">
+  <section id="buttons">
+    <h2>Outline Buttons</h2>
+  <p>
+    Bootstrap 4 introduces outline buttons-- buutons with a contextual ouline.
+  </p>
+
+<button class="btn btn-lg btn-outline-primary">Primary</button>
+<button class="btn btn-lg btn-outline-secondary">Secondary</button>
+<button class="btn btn-lg btn-outline-dark">dark</button>
+<button class="btn btn-lg btn-outline-info">info</button>
+<button class="btn btn-lg btn-outline-success">success</button>
+<button class="btn btn-lg btn-outline-warning">Warning</button>
+<button class="btn btn-lg btn-outline-danger">Danger</button>
+</section>
+</div>
+<hr>
+<!------------Progress Bar------------->
+<div class="container">
+  <section id="bar">
+    <h2>Progress Bar</h2>
+    <p>Bootstrap 4 takes advantage of the HTML<code>&lt;progress&gt;</code> elements when working with progress bars.</p>
+
+    <div class="progress-bar bg-success" style="width:73%">73%</div>
+    <div class="progress-bar bg-warning mt-1" style="width:53%">53%</div>
+    <div class="progress-bar bg-dark mt-1" style="width:20%">20%</div>
+  </section>
+</div>
+<hr>
+
+<!----------Responsive Tables------------->
+<div class="container">
+  <section id="rtable">
+  <h2>Responsive Tables</h2>
+    <p>Bootstrap 4 allows you to apply the <code>.table-responsive</code> class directly to the table (as opposed to being required to apply it to a parent element, like in Bootstrap 3).</p>
+
+    <table class="table table-responsive table-hover">
+      <thead>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+            <th>Header 4</th>
+            <th>Header 5</th>
+            <th>Header 6</th>
+            <th>Header 7</th>
+            <th>Header 8</th>
+            <th>Header 9</th>
+            <th>Header 10</th>
+        </tr>
+      </thead>
+       <tbody>
+        <tr>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+        </tr>
+                    <tr>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                    </tr>
+                    <tr>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                    </tr>
+      </tbody>
+    </table>
+<hr>
+
+<!---------Reflow Tables--------------->
+<!-------
+<h3>Reflow Tables</h3>
+  <p>There's a new <code>.table-reflow</code> class that effectively turns your table on its side.</p>
+
+  <table class="table table-reflow">
+    <thead>
+      <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                        <th>Header 3</th>
+                        <th>Header 4</th>
+                        <th>Header 5</th>
+                        <th>Header 6</th>
+                        <th>Header 7</th>
+                        <th>Header 8</th>
+                        <th>Header 9</th>
+                        <th>Header 10</th>
+      </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                    </tr>
+                    <tr>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                    </tr>
+                    <tr>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                    </tr>
+                </tbody>
+  </table>
+------------------->
+<h3>Table Head Styles</h3>
+  <p>You can add background color to your table headers in Bootstrap 4.</p>
+
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+      </tr>
+    </thead>
+      <tfoot>
+        <tr>
+          <th>Footer 1</th>
+          <th>Footer 2</th>
+          <th>Footer 3</th>
+        </tr>
+      </tfoot>
+                <tbody>
+                    <tr>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                    </tr>
+                    <tr>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                    </tr>
+                    <tr>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                    </tr>
+    </tbody>
+  </table>
+  </section>
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</html>
